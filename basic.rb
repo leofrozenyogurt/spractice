@@ -51,3 +51,7 @@ post '/decrypt' do
   params[:message_to_decrypt].reverse  
 end
 
+not_found do 
+  status 404
+  erb :page_not_found
+end
